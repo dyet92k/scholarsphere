@@ -32,10 +32,7 @@ jobs:
   include:
     - script: ./travis/test.sh
       env:
-        - TEST_SUITE=feature
-    - script: ./travis/test.sh
-      env:
-        - TEST_SUITE=unit
+        - TEST_SUITE=all
     - stage: coverage
       install: skip
       script: ./travis/coverage.sh
